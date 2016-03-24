@@ -80,15 +80,12 @@ header {
 	}
 }
 
-article {
-	/*padding:100px 50px;*/
+/*article {
 	padding:30px 50px;
 	text-align:center;
 	width:80%;
 	margin:0px auto;
-	/*background: $sandy-brown;*/
 	& section {
-		/*background: $sandy-brown;*/
 		& .section-title {
 			font-size: 30px;
 			text-transform: uppercase;
@@ -110,6 +107,28 @@ article {
 				text-decoration: underline;
 			}
 		}
+	}
+}*/
+
+.section-title {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.section-content {
+	text-align: justify;
+	margin-top: 20px;
+}
+.section-footer {
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	& a {
+		color: $black;
+		margin-right: 25px;
+	}
+	& a:hover {
+		color: $teal;
+		text-decoration: underline;
 	}
 }
 footer {

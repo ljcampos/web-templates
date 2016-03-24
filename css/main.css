@@ -89,47 +89,65 @@ header .header-content .subtitle {
   text-align: justify;
 }
 
-/* line 83, ../scss/main.scss */
-article {
-  /*padding:100px 50px;*/
-  padding: 30px 50px;
-  text-align: center;
-  width: 80%;
-  margin: 0px auto;
-  /*background: $sandy-brown;*/
-}
-/* line 90, ../scss/main.scss */
-article section {
-  /*background: $sandy-brown;*/
-}
-/* line 92, ../scss/main.scss */
-article section .section-title {
+/*article {
+	padding:30px 50px;
+	text-align:center;
+	width:80%;
+	margin:0px auto;
+	& section {
+		& .section-title {
+			font-size: 30px;
+			text-transform: uppercase;
+		}
+		& .section-content {
+			text-align: justify;
+			margin-top: 20px;
+		}
+		& .section-footer {
+			text-align: right;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			& a {
+				color: $black;
+				margin-right: 25px;
+			}
+			& a:hover {
+				color: $teal;
+				text-decoration: underline;
+			}
+		}
+	}
+}*/
+/* line 113, ../scss/main.scss */
+.section-title {
   font-size: 30px;
   text-transform: uppercase;
 }
-/* line 96, ../scss/main.scss */
-article section .section-content {
+
+/* line 117, ../scss/main.scss */
+.section-content {
   text-align: justify;
   margin-top: 20px;
 }
-/* line 100, ../scss/main.scss */
-article section .section-footer {
+
+/* line 121, ../scss/main.scss */
+.section-footer {
   text-align: right;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 104, ../scss/main.scss */
-article section .section-footer a {
+/* line 125, ../scss/main.scss */
+.section-footer a {
   color: #000000;
   margin-right: 25px;
 }
-/* line 108, ../scss/main.scss */
-article section .section-footer a:hover {
+/* line 129, ../scss/main.scss */
+.section-footer a:hover {
   color: #008080;
   text-decoration: underline;
 }
 
-/* line 115, ../scss/main.scss */
+/* line 134, ../scss/main.scss */
 footer {
   /*position: fixed;
   width: 100%;
@@ -168,7 +186,7 @@ footer {
 		}
 	}
 }*/
-/* line 153, ../scss/main.scss */
+/* line 172, ../scss/main.scss */
 .img-container {
   border: 2px solid gray;
   max-width: 400px;
@@ -176,30 +194,30 @@ footer {
   display: inline-block;
   margin: 5px;
 }
-/* line 159, ../scss/main.scss */
+/* line 178, ../scss/main.scss */
 .img-container .img-header {
   max-height: 213px;
   overflow: hidden;
 }
-/* line 163, ../scss/main.scss */
+/* line 182, ../scss/main.scss */
 .img-container .img-body {
   padding: 0 26px 50px 26px;
   background-color: #FFFFFF;
 }
-/* line 166, ../scss/main.scss */
+/* line 185, ../scss/main.scss */
 .img-container .img-body .img-body-title {
   left: 0;
   padding: 26px;
   text-transform: uppercase;
   font-size: 20px;
 }
-/* line 172, ../scss/main.scss */
+/* line 191, ../scss/main.scss */
 .img-container .img-body .img-body-description {
   padding: 5px;
   text-align: justify;
   border-bottom: 1px solid #757B82;
 }
-/* line 177, ../scss/main.scss */
+/* line 196, ../scss/main.scss */
 .img-container .img-body .img-body-footer {
   position: relative;
   margin-top: 14px;
