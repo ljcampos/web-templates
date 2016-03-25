@@ -38,7 +38,7 @@ a {
 .ed-container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -838,7 +838,7 @@ a {
     width: 100%;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 992px) {
   /* line 63, ../scss/componentes/_core.scss */
   .md-5,
   .caja.md-5,
@@ -1473,10 +1473,10 @@ body.desarrollo:before {
     content: "ED-GRID: Tamaño sm, desde 768px";
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   /* line 107, ../scss/componentes/_desarrollo.scss */
   body.desarrollo:before {
-    content: "ED-GRID: Tamaño md, desde 1024px";
+    content: "ED-GRID: Tamaño md, desde 992px";
   }
 }
 @media screen and (min-width: 1400px) {
@@ -1527,7 +1527,7 @@ body.desarrollo:before {
     display: none !important;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 991px) {
   /* line 6, ../scss/componentes/_visibilidad.scss */
   .desde-md,
   .from-md {
@@ -1555,7 +1555,7 @@ body.desarrollo:before {
     display: none !important;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   /* line 16, ../scss/componentes/_visibilidad.scss */
   .hasta-md,
   .to-md {
@@ -2191,7 +2191,7 @@ class="no-padding" a la caja le da padding cero solo a ella
     order: 10;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   /* line 9, ../scss/componentes/_flexbox.scss */
   .md-order-1 {
     order: 1;
@@ -2316,7 +2316,7 @@ class="no-padding" a la caja le da padding cero solo a ella
     flex-wrap: wrap;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 992px) {
   /* line 24, ../scss/componentes/_flexbox.scss */
   .md-justify {
     justify-content: space-between;
@@ -2358,7 +2358,7 @@ class="no-padding" a la caja le da padding cero solo a ella
     flex-wrap: wrap;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 992px) {
   /* line 39, ../scss/componentes/_flexbox.scss */
   .md-distribute,
   .md-distributed {
@@ -2399,7 +2399,7 @@ class="no-padding" a la caja le da padding cero solo a ella
     flex-wrap: wrap;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 992px) {
   /* line 54, ../scss/componentes/_flexbox.scss */
   .md-main-center {
     justify-content: center;
@@ -2438,7 +2438,7 @@ class="no-padding" a la caja le da padding cero solo a ella
     flex-wrap: wrap;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 992px) {
   /* line 68, ../scss/componentes/_flexbox.scss */
   .md-main-start {
     justify-content: flex-start;
@@ -2477,7 +2477,7 @@ class="no-padding" a la caja le da padding cero solo a ella
     flex-wrap: wrap;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 992px) {
   /* line 82, ../scss/componentes/_flexbox.scss */
   .md-main-end {
     justify-content: flex-end;
@@ -2519,7 +2519,7 @@ class="no-padding" a la caja le da padding cero solo a ella
     flex-wrap: wrap;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 992px) {
   /* line 99, ../scss/componentes/_flexbox.scss */
   .md-cross-start {
     align-items: flex-start;
@@ -2563,7 +2563,7 @@ class="no-padding" a la caja le da padding cero solo a ella
     flex-wrap: wrap;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 992px) {
   /* line 115, ../scss/componentes/_flexbox.scss */
   .md-cross-center {
     align-items: center;
@@ -2605,7 +2605,7 @@ class="no-padding" a la caja le da padding cero solo a ella
     flex-wrap: wrap;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 992px) {
   /* line 129, ../scss/componentes/_flexbox.scss */
   .md-cross-end {
     align-items: flex-end;
@@ -2646,7 +2646,7 @@ class="no-padding" a la caja le da padding cero solo a ella
     flex-wrap: wrap;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 992px) {
   /* line 146, ../scss/componentes/_flexbox.scss */
   .md-reverse {
     flex-direction: row-reverse;
@@ -2685,7 +2685,7 @@ class="no-padding" a la caja le da padding cero solo a ella
     flex-wrap: wrap;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 992px) {
   /* line 161, ../scss/componentes/_flexbox.scss */
   .md-column {
     flex-direction: column;
@@ -2722,7 +2722,7 @@ class="no-padding" a la caja le da padding cero solo a ella
     flex-wrap: wrap;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 992px) {
   /* line 173, ../scss/componentes/_flexbox.scss */
   .md-column {
     flex-direction: column-reverse;
@@ -2743,6 +2743,15 @@ class="no-padding" a la caja le da padding cero solo a ella
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/* line 188, ../scss/componentes/_flexbox.scss */
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 @media all and (min-width: 480px) {
@@ -3191,7 +3200,7 @@ class="no-padding" a la caja le da padding cero solo a ella
     margin-left: 100%;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 992px) {
   /* line 7, ../scss/componentes/_offset.scss */
   .caja.md-offset-5,
   .ed-item.md-offset-5 {

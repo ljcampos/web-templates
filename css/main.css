@@ -1,94 +1,3956 @@
-/* line 2, ../scss/main.scss */
+@charset "UTF-8";
+/*#277096
+#3D77A0*/
+/* line 2, ../scss/componentes/_base.scss */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* line 8, ../scss/componentes/_base.scss */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* line 14, ../scss/componentes/_base.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 19, ../scss/componentes/_base.scss */
+a {
+  text-decoration: none;
+}
+
+/*
+  GRUPOS Y CAJAS
+  ==============
+  Los grupos son contenedores para las cajas.
+  Las cajas crean las divisiones en el grupo (columnas).
+  En ED GRID 1.2. los grupos son containers y las
+  cajas son items. Para crear un namespace se usan las
+  clases ed-container y ed-item. Se pueden seguir usando
+  las clases .grupo y .caja pero se desaconseja (en la v2 desaparecerán)
+*/
+/* line 12, ../scss/componentes/_core.scss */
+.grupo,
+.ed-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+/* line 21, ../scss/componentes/_core.scss */
+.grupo.total, .grupo.full,
+.ed-container.total,
+.ed-container.full {
+  max-width: 100%;
+}
+
+/* line 27, ../scss/componentes/_core.scss */
+.caja,
+.ed-item {
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-5,
+.caja.base-5,
+.ed-item.base-5 {
+  width: 5%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-10,
+.caja.base-10,
+.ed-item.base-10 {
+  width: 10%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-15,
+.caja.base-15,
+.ed-item.base-15 {
+  width: 15%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-20,
+.caja.base-20,
+.ed-item.base-20 {
+  width: 20%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-25,
+.caja.base-25,
+.ed-item.base-25 {
+  width: 25%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-30,
+.caja.base-30,
+.ed-item.base-30 {
+  width: 30%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-35,
+.caja.base-35,
+.ed-item.base-35 {
+  width: 35%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-40,
+.caja.base-40,
+.ed-item.base-40 {
+  width: 40%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-45,
+.caja.base-45,
+.ed-item.base-45 {
+  width: 45%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-50,
+.caja.base-50,
+.ed-item.base-50 {
+  width: 50%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-55,
+.caja.base-55,
+.ed-item.base-55 {
+  width: 55%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-60,
+.caja.base-60,
+.ed-item.base-60 {
+  width: 60%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-65,
+.caja.base-65,
+.ed-item.base-65 {
+  width: 65%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-70,
+.caja.base-70,
+.ed-item.base-70 {
+  width: 70%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-75,
+.caja.base-75,
+.ed-item.base-75 {
+  width: 75%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-80,
+.caja.base-80,
+.ed-item.base-80 {
+  width: 80%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-85,
+.caja.base-85,
+.ed-item.base-85 {
+  width: 85%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-90,
+.caja.base-90,
+.ed-item.base-90 {
+  width: 90%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-95,
+.caja.base-95,
+.ed-item.base-95 {
+  width: 95%;
+}
+
+/* line 38, ../scss/componentes/_core.scss */
+.base-100,
+.caja.base-100,
+.ed-item.base-100 {
+  width: 100%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-1-3,
+.caja.base-1-3,
+.ed-item.base-1-3 {
+  width: 33.33333%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-2-3,
+.caja.base-2-3,
+.ed-item.base-2-3 {
+  width: 66.66667%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-3-3,
+.caja.base-3-3,
+.ed-item.base-3-3 {
+  width: 100%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-1-6,
+.caja.base-1-6,
+.ed-item.base-1-6 {
+  width: 16.66667%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-2-6,
+.caja.base-2-6,
+.ed-item.base-2-6 {
+  width: 33.33333%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-3-6,
+.caja.base-3-6,
+.ed-item.base-3-6 {
+  width: 50%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-4-6,
+.caja.base-4-6,
+.ed-item.base-4-6 {
+  width: 66.66667%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-5-6,
+.caja.base-5-6,
+.ed-item.base-5-6 {
+  width: 83.33333%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-6-6,
+.caja.base-6-6,
+.ed-item.base-6-6 {
+  width: 100%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-1-8,
+.caja.base-1-8,
+.ed-item.base-1-8 {
+  width: 12.5%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-2-8,
+.caja.base-2-8,
+.ed-item.base-2-8 {
+  width: 25%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-3-8,
+.caja.base-3-8,
+.ed-item.base-3-8 {
+  width: 37.5%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-4-8,
+.caja.base-4-8,
+.ed-item.base-4-8 {
+  width: 50%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-5-8,
+.caja.base-5-8,
+.ed-item.base-5-8 {
+  width: 62.5%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-6-8,
+.caja.base-6-8,
+.ed-item.base-6-8 {
+  width: 75%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-7-8,
+.caja.base-7-8,
+.ed-item.base-7-8 {
+  width: 87.5%;
+}
+
+/* line 48, ../scss/componentes/_core.scss */
+.base-8-8,
+.caja.base-8-8,
+.ed-item.base-8-8 {
+  width: 100%;
+}
+
+@media all and (min-width: 480px) {
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-5,
+  .caja.xs-5,
+  .ed-item.xs-5 {
+    width: 5%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-10,
+  .caja.xs-10,
+  .ed-item.xs-10 {
+    width: 10%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-15,
+  .caja.xs-15,
+  .ed-item.xs-15 {
+    width: 15%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-20,
+  .caja.xs-20,
+  .ed-item.xs-20 {
+    width: 20%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-25,
+  .caja.xs-25,
+  .ed-item.xs-25 {
+    width: 25%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-30,
+  .caja.xs-30,
+  .ed-item.xs-30 {
+    width: 30%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-35,
+  .caja.xs-35,
+  .ed-item.xs-35 {
+    width: 35%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-40,
+  .caja.xs-40,
+  .ed-item.xs-40 {
+    width: 40%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-45,
+  .caja.xs-45,
+  .ed-item.xs-45 {
+    width: 45%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-50,
+  .caja.xs-50,
+  .ed-item.xs-50 {
+    width: 50%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-55,
+  .caja.xs-55,
+  .ed-item.xs-55 {
+    width: 55%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-60,
+  .caja.xs-60,
+  .ed-item.xs-60 {
+    width: 60%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-65,
+  .caja.xs-65,
+  .ed-item.xs-65 {
+    width: 65%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-70,
+  .caja.xs-70,
+  .ed-item.xs-70 {
+    width: 70%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-75,
+  .caja.xs-75,
+  .ed-item.xs-75 {
+    width: 75%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-80,
+  .caja.xs-80,
+  .ed-item.xs-80 {
+    width: 80%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-85,
+  .caja.xs-85,
+  .ed-item.xs-85 {
+    width: 85%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-90,
+  .caja.xs-90,
+  .ed-item.xs-90 {
+    width: 90%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-95,
+  .caja.xs-95,
+  .ed-item.xs-95 {
+    width: 95%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .xs-100,
+  .caja.xs-100,
+  .ed-item.xs-100 {
+    width: 100%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-1-3,
+  .caja.xs-1-3,
+  .ed-item.xs-1-3 {
+    width: 33.33333%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-2-3,
+  .caja.xs-2-3,
+  .ed-item.xs-2-3 {
+    width: 66.66667%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-3-3,
+  .caja.xs-3-3,
+  .ed-item.xs-3-3 {
+    width: 100%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-1-6,
+  .caja.xs-1-6,
+  .ed-item.xs-1-6 {
+    width: 16.66667%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-2-6,
+  .caja.xs-2-6,
+  .ed-item.xs-2-6 {
+    width: 33.33333%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-3-6,
+  .caja.xs-3-6,
+  .ed-item.xs-3-6 {
+    width: 50%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-4-6,
+  .caja.xs-4-6,
+  .ed-item.xs-4-6 {
+    width: 66.66667%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-5-6,
+  .caja.xs-5-6,
+  .ed-item.xs-5-6 {
+    width: 83.33333%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-6-6,
+  .caja.xs-6-6,
+  .ed-item.xs-6-6 {
+    width: 100%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-1-8,
+  .caja.xs-1-8,
+  .ed-item.xs-1-8 {
+    width: 12.5%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-2-8,
+  .caja.xs-2-8,
+  .ed-item.xs-2-8 {
+    width: 25%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-3-8,
+  .caja.xs-3-8,
+  .ed-item.xs-3-8 {
+    width: 37.5%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-4-8,
+  .caja.xs-4-8,
+  .ed-item.xs-4-8 {
+    width: 50%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-5-8,
+  .caja.xs-5-8,
+  .ed-item.xs-5-8 {
+    width: 62.5%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-6-8,
+  .caja.xs-6-8,
+  .ed-item.xs-6-8 {
+    width: 75%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-7-8,
+  .caja.xs-7-8,
+  .ed-item.xs-7-8 {
+    width: 87.5%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .xs-8-8,
+  .caja.xs-8-8,
+  .ed-item.xs-8-8 {
+    width: 100%;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-5,
+  .caja.sm-5,
+  .ed-item.sm-5 {
+    width: 5%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-10,
+  .caja.sm-10,
+  .ed-item.sm-10 {
+    width: 10%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-15,
+  .caja.sm-15,
+  .ed-item.sm-15 {
+    width: 15%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-20,
+  .caja.sm-20,
+  .ed-item.sm-20 {
+    width: 20%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-25,
+  .caja.sm-25,
+  .ed-item.sm-25 {
+    width: 25%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-30,
+  .caja.sm-30,
+  .ed-item.sm-30 {
+    width: 30%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-35,
+  .caja.sm-35,
+  .ed-item.sm-35 {
+    width: 35%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-40,
+  .caja.sm-40,
+  .ed-item.sm-40 {
+    width: 40%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-45,
+  .caja.sm-45,
+  .ed-item.sm-45 {
+    width: 45%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-50,
+  .caja.sm-50,
+  .ed-item.sm-50 {
+    width: 50%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-55,
+  .caja.sm-55,
+  .ed-item.sm-55 {
+    width: 55%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-60,
+  .caja.sm-60,
+  .ed-item.sm-60 {
+    width: 60%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-65,
+  .caja.sm-65,
+  .ed-item.sm-65 {
+    width: 65%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-70,
+  .caja.sm-70,
+  .ed-item.sm-70 {
+    width: 70%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-75,
+  .caja.sm-75,
+  .ed-item.sm-75 {
+    width: 75%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-80,
+  .caja.sm-80,
+  .ed-item.sm-80 {
+    width: 80%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-85,
+  .caja.sm-85,
+  .ed-item.sm-85 {
+    width: 85%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-90,
+  .caja.sm-90,
+  .ed-item.sm-90 {
+    width: 90%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-95,
+  .caja.sm-95,
+  .ed-item.sm-95 {
+    width: 95%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .sm-100,
+  .caja.sm-100,
+  .ed-item.sm-100 {
+    width: 100%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-1-3,
+  .caja.sm-1-3,
+  .ed-item.sm-1-3 {
+    width: 33.33333%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-2-3,
+  .caja.sm-2-3,
+  .ed-item.sm-2-3 {
+    width: 66.66667%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-3-3,
+  .caja.sm-3-3,
+  .ed-item.sm-3-3 {
+    width: 100%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-1-6,
+  .caja.sm-1-6,
+  .ed-item.sm-1-6 {
+    width: 16.66667%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-2-6,
+  .caja.sm-2-6,
+  .ed-item.sm-2-6 {
+    width: 33.33333%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-3-6,
+  .caja.sm-3-6,
+  .ed-item.sm-3-6 {
+    width: 50%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-4-6,
+  .caja.sm-4-6,
+  .ed-item.sm-4-6 {
+    width: 66.66667%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-5-6,
+  .caja.sm-5-6,
+  .ed-item.sm-5-6 {
+    width: 83.33333%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-6-6,
+  .caja.sm-6-6,
+  .ed-item.sm-6-6 {
+    width: 100%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-1-8,
+  .caja.sm-1-8,
+  .ed-item.sm-1-8 {
+    width: 12.5%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-2-8,
+  .caja.sm-2-8,
+  .ed-item.sm-2-8 {
+    width: 25%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-3-8,
+  .caja.sm-3-8,
+  .ed-item.sm-3-8 {
+    width: 37.5%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-4-8,
+  .caja.sm-4-8,
+  .ed-item.sm-4-8 {
+    width: 50%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-5-8,
+  .caja.sm-5-8,
+  .ed-item.sm-5-8 {
+    width: 62.5%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-6-8,
+  .caja.sm-6-8,
+  .ed-item.sm-6-8 {
+    width: 75%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-7-8,
+  .caja.sm-7-8,
+  .ed-item.sm-7-8 {
+    width: 87.5%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .sm-8-8,
+  .caja.sm-8-8,
+  .ed-item.sm-8-8 {
+    width: 100%;
+  }
+}
+@media all and (min-width: 992px) {
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-5,
+  .caja.md-5,
+  .ed-item.md-5 {
+    width: 5%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-10,
+  .caja.md-10,
+  .ed-item.md-10 {
+    width: 10%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-15,
+  .caja.md-15,
+  .ed-item.md-15 {
+    width: 15%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-20,
+  .caja.md-20,
+  .ed-item.md-20 {
+    width: 20%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-25,
+  .caja.md-25,
+  .ed-item.md-25 {
+    width: 25%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-30,
+  .caja.md-30,
+  .ed-item.md-30 {
+    width: 30%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-35,
+  .caja.md-35,
+  .ed-item.md-35 {
+    width: 35%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-40,
+  .caja.md-40,
+  .ed-item.md-40 {
+    width: 40%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-45,
+  .caja.md-45,
+  .ed-item.md-45 {
+    width: 45%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-50,
+  .caja.md-50,
+  .ed-item.md-50 {
+    width: 50%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-55,
+  .caja.md-55,
+  .ed-item.md-55 {
+    width: 55%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-60,
+  .caja.md-60,
+  .ed-item.md-60 {
+    width: 60%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-65,
+  .caja.md-65,
+  .ed-item.md-65 {
+    width: 65%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-70,
+  .caja.md-70,
+  .ed-item.md-70 {
+    width: 70%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-75,
+  .caja.md-75,
+  .ed-item.md-75 {
+    width: 75%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-80,
+  .caja.md-80,
+  .ed-item.md-80 {
+    width: 80%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-85,
+  .caja.md-85,
+  .ed-item.md-85 {
+    width: 85%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-90,
+  .caja.md-90,
+  .ed-item.md-90 {
+    width: 90%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-95,
+  .caja.md-95,
+  .ed-item.md-95 {
+    width: 95%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .md-100,
+  .caja.md-100,
+  .ed-item.md-100 {
+    width: 100%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-1-3,
+  .caja.md-1-3,
+  .ed-item.md-1-3 {
+    width: 33.33333%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-2-3,
+  .caja.md-2-3,
+  .ed-item.md-2-3 {
+    width: 66.66667%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-3-3,
+  .caja.md-3-3,
+  .ed-item.md-3-3 {
+    width: 100%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-1-6,
+  .caja.md-1-6,
+  .ed-item.md-1-6 {
+    width: 16.66667%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-2-6,
+  .caja.md-2-6,
+  .ed-item.md-2-6 {
+    width: 33.33333%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-3-6,
+  .caja.md-3-6,
+  .ed-item.md-3-6 {
+    width: 50%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-4-6,
+  .caja.md-4-6,
+  .ed-item.md-4-6 {
+    width: 66.66667%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-5-6,
+  .caja.md-5-6,
+  .ed-item.md-5-6 {
+    width: 83.33333%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-6-6,
+  .caja.md-6-6,
+  .ed-item.md-6-6 {
+    width: 100%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-1-8,
+  .caja.md-1-8,
+  .ed-item.md-1-8 {
+    width: 12.5%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-2-8,
+  .caja.md-2-8,
+  .ed-item.md-2-8 {
+    width: 25%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-3-8,
+  .caja.md-3-8,
+  .ed-item.md-3-8 {
+    width: 37.5%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-4-8,
+  .caja.md-4-8,
+  .ed-item.md-4-8 {
+    width: 50%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-5-8,
+  .caja.md-5-8,
+  .ed-item.md-5-8 {
+    width: 62.5%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-6-8,
+  .caja.md-6-8,
+  .ed-item.md-6-8 {
+    width: 75%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-7-8,
+  .caja.md-7-8,
+  .ed-item.md-7-8 {
+    width: 87.5%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .md-8-8,
+  .caja.md-8-8,
+  .ed-item.md-8-8 {
+    width: 100%;
+  }
+}
+@media all and (min-width: 1400px) {
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-5,
+  .caja.lg-5,
+  .ed-item.lg-5 {
+    width: 5%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-10,
+  .caja.lg-10,
+  .ed-item.lg-10 {
+    width: 10%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-15,
+  .caja.lg-15,
+  .ed-item.lg-15 {
+    width: 15%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-20,
+  .caja.lg-20,
+  .ed-item.lg-20 {
+    width: 20%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-25,
+  .caja.lg-25,
+  .ed-item.lg-25 {
+    width: 25%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-30,
+  .caja.lg-30,
+  .ed-item.lg-30 {
+    width: 30%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-35,
+  .caja.lg-35,
+  .ed-item.lg-35 {
+    width: 35%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-40,
+  .caja.lg-40,
+  .ed-item.lg-40 {
+    width: 40%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-45,
+  .caja.lg-45,
+  .ed-item.lg-45 {
+    width: 45%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-50,
+  .caja.lg-50,
+  .ed-item.lg-50 {
+    width: 50%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-55,
+  .caja.lg-55,
+  .ed-item.lg-55 {
+    width: 55%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-60,
+  .caja.lg-60,
+  .ed-item.lg-60 {
+    width: 60%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-65,
+  .caja.lg-65,
+  .ed-item.lg-65 {
+    width: 65%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-70,
+  .caja.lg-70,
+  .ed-item.lg-70 {
+    width: 70%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-75,
+  .caja.lg-75,
+  .ed-item.lg-75 {
+    width: 75%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-80,
+  .caja.lg-80,
+  .ed-item.lg-80 {
+    width: 80%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-85,
+  .caja.lg-85,
+  .ed-item.lg-85 {
+    width: 85%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-90,
+  .caja.lg-90,
+  .ed-item.lg-90 {
+    width: 90%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-95,
+  .caja.lg-95,
+  .ed-item.lg-95 {
+    width: 95%;
+  }
+
+  /* line 63, ../scss/componentes/_core.scss */
+  .lg-100,
+  .caja.lg-100,
+  .ed-item.lg-100 {
+    width: 100%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-1-3,
+  .caja.lg-1-3,
+  .ed-item.lg-1-3 {
+    width: 33.33333%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-2-3,
+  .caja.lg-2-3,
+  .ed-item.lg-2-3 {
+    width: 66.66667%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-3-3,
+  .caja.lg-3-3,
+  .ed-item.lg-3-3 {
+    width: 100%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-1-6,
+  .caja.lg-1-6,
+  .ed-item.lg-1-6 {
+    width: 16.66667%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-2-6,
+  .caja.lg-2-6,
+  .ed-item.lg-2-6 {
+    width: 33.33333%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-3-6,
+  .caja.lg-3-6,
+  .ed-item.lg-3-6 {
+    width: 50%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-4-6,
+  .caja.lg-4-6,
+  .ed-item.lg-4-6 {
+    width: 66.66667%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-5-6,
+  .caja.lg-5-6,
+  .ed-item.lg-5-6 {
+    width: 83.33333%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-6-6,
+  .caja.lg-6-6,
+  .ed-item.lg-6-6 {
+    width: 100%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-1-8,
+  .caja.lg-1-8,
+  .ed-item.lg-1-8 {
+    width: 12.5%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-2-8,
+  .caja.lg-2-8,
+  .ed-item.lg-2-8 {
+    width: 25%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-3-8,
+  .caja.lg-3-8,
+  .ed-item.lg-3-8 {
+    width: 37.5%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-4-8,
+  .caja.lg-4-8,
+  .ed-item.lg-4-8 {
+    width: 50%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-5-8,
+  .caja.lg-5-8,
+  .ed-item.lg-5-8 {
+    width: 62.5%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-6-8,
+  .caja.lg-6-8,
+  .ed-item.lg-6-8 {
+    width: 75%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-7-8,
+  .caja.lg-7-8,
+  .ed-item.lg-7-8 {
+    width: 87.5%;
+  }
+
+  /* line 72, ../scss/componentes/_core.scss */
+  .lg-8-8,
+  .caja.lg-8-8,
+  .ed-item.lg-8-8 {
+    width: 100%;
+  }
+}
+/*ESTILOS PARA DESARROLLO
+========================
+Añada la clase "desarrollo"
+a <body> para tener ayudas al trabajar con ED GRID
+*/
+/* line 7, ../scss/componentes/_desarrollo.scss */
+body.desarrollo {
+  margin: 0 !important;
+}
+/* line 9, ../scss/componentes/_desarrollo.scss */
+body.desarrollo:before {
+  background: steelblue;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+  display: block;
+  height: 36px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 900;
+}
+/* line 27, ../scss/componentes/_desarrollo.scss */
+body.desarrollo .grupo,
+body.desarrollo .ed-container {
+  padding-top: 22px;
+  margin-bottom: 10px;
+  outline: 1px solid tomato;
+  position: relative;
+}
+/* line 36, ../scss/componentes/_desarrollo.scss */
+body.desarrollo .grupo .caja,
+body.desarrollo .grupo .ed-item,
+body.desarrollo .ed-container .caja,
+body.desarrollo .ed-container .ed-item {
+  position: relative;
+  padding-bottom: 22px;
+}
+/* line 43, ../scss/componentes/_desarrollo.scss */
+body.desarrollo .grupo .caja:nth-child(even),
+body.desarrollo .grupo .ed-item:nth-child(even),
+body.desarrollo .ed-container .caja:nth-child(even),
+body.desarrollo .ed-container .ed-item:nth-child(even) {
+  background: rgba(70, 130, 180, 0.2);
+}
+/* line 47, ../scss/componentes/_desarrollo.scss */
+body.desarrollo .grupo .grupo,
+body.desarrollo .grupo .ed-container,
+body.desarrollo .ed-container .grupo,
+body.desarrollo .ed-container .ed-container {
+  margin-bottom: 0;
+}
+
+/* line 55, ../scss/componentes/_desarrollo.scss */
+.desarrollo .grupo:before,
+.desarrollo .ed-container:before,
+.desarrollo .grupo .caja:after,
+.desarrollo .ed-container .ed-item:after {
+  content: attr(class);
+  font-style: italic;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 0 5px;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+}
+
+/* line 79, ../scss/componentes/_desarrollo.scss */
+.desarrollo .grupo:before,
+.desarrollo .ed-container:before {
+  background: rgba(255, 99, 71, 0.3);
+  color: tomato;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* line 88, ../scss/componentes/_desarrollo.scss */
+.desarrollo .caja:after,
+.desarrollo .ed-item:after {
+  background: rgba(70, 130, 180, 0.2);
+  color: steelblue;
+}
+
+/* line 94, ../scss/componentes/_desarrollo.scss */
+.desarrollo .caja.total:after,
+.desarrollo .ed-item.total:after {
+  background: rgba(27, 50, 70, 0.3);
+}
+
+/* line 100, ../scss/componentes/_desarrollo.scss */
+body.desarrollo:before {
+  content: "ED-GRID: Tamaño base";
+}
+
+@media screen and (min-width: 480px) {
+  /* line 107, ../scss/componentes/_desarrollo.scss */
+  body.desarrollo:before {
+    content: "ED-GRID: Tamaño xs, desde 480px";
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 107, ../scss/componentes/_desarrollo.scss */
+  body.desarrollo:before {
+    content: "ED-GRID: Tamaño sm, desde 768px";
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 107, ../scss/componentes/_desarrollo.scss */
+  body.desarrollo:before {
+    content: "ED-GRID: Tamaño md, desde 992px";
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 107, ../scss/componentes/_desarrollo.scss */
+  body.desarrollo:before {
+    content: "ED-GRID: Tamaño lg, desde 1400px";
+  }
+}
+/* line 114, ../scss/componentes/_desarrollo.scss */
+.grupo.demostrar,
+.ed-container.demostrar {
+  outline: 1px solid tomato;
+  margin: 1em auto;
+}
+/* line 118, ../scss/componentes/_desarrollo.scss */
+.grupo.demostrar > .caja, .grupo.demostrar > .ed-item,
+.ed-container.demostrar > .caja,
+.ed-container.demostrar > .ed-item {
+  background: #eee;
+  box-shadow: 0 0 0 1px steelblue;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+/* line 124, ../scss/componentes/_desarrollo.scss */
+.grupo.demostrar > .caja p, .grupo.demostrar > .ed-item p,
+.ed-container.demostrar > .caja p,
+.ed-container.demostrar > .ed-item p {
+  margin-bottom: 0;
+}
+/* line 127, ../scss/componentes/_desarrollo.scss */
+.grupo.demostrar > .caja:nth-child(odd), .grupo.demostrar > .ed-item:nth-child(odd),
+.ed-container.demostrar > .caja:nth-child(odd),
+.ed-container.demostrar > .ed-item:nth-child(odd) {
+  background: #ddd;
+}
+
+@media screen and (max-width: 479px) {
+  /* line 6, ../scss/componentes/_visibilidad.scss */
+  .desde-xs,
+  .from-xs {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 6, ../scss/componentes/_visibilidad.scss */
+  .desde-sm,
+  .from-sm {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 6, ../scss/componentes/_visibilidad.scss */
+  .desde-md,
+  .from-md {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1399px) {
+  /* line 6, ../scss/componentes/_visibilidad.scss */
+  .desde-lg,
+  .from-lg {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 480px) {
+  /* line 16, ../scss/componentes/_visibilidad.scss */
+  .hasta-xs,
+  .to-xs {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 16, ../scss/componentes/_visibilidad.scss */
+  .hasta-sm,
+  .to-sm {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 16, ../scss/componentes/_visibilidad.scss */
+  .hasta-md,
+  .to-md {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 16, ../scss/componentes/_visibilidad.scss */
+  .hasta-lg,
+  .to-lg {
+    display: none !important;
+  }
+}
+/* line 2, ../scss/componentes/_utilidades.scss */
+.centro,
+.centrar,
+.center {
+  display: block;
+  clear: both;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* line 11, ../scss/componentes/_utilidades.scss */
+.left,
+.izquierda {
+  float: left;
+}
+
+/* line 16, ../scss/componentes/_utilidades.scss */
+.right,
+.derecha {
+  float: right;
+}
+
+/* line 21, ../scss/componentes/_utilidades.scss */
+.total,
+.full {
+  width: 100%;
+  clear: both;
+}
+
+/* line 32, ../scss/componentes/_utilidades.scss */
+.centrar-texto,
+.center-text,
+.text-center {
+  text-align: center;
+}
+
+/* line 38, ../scss/componentes/_utilidades.scss */
+.izquierda-texto,
+.izquierda-contenido {
+  text-align: left;
+}
+
+/* line 43, ../scss/componentes/_utilidades.scss */
+.derecha-texto,
+.derecha-contenido {
+  text-align: right;
+}
+
+/* line 50, ../scss/componentes/_utilidades.scss */
+.circulo,
+.circle {
+  border-radius: 50%;
+}
+
+/* line 57, ../scss/componentes/_utilidades.scss */
+.limpiar:before, .limpiar:after,
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+/*NO PADDING
+===========
+class="no-padding" al grupo, le da padding cero a todas sus cajas.
+class="no-padding" a la caja le da padding cero solo a ella
+*/
+/* line 70, ../scss/componentes/_utilidades.scss */
+.no-padding.grupo > .caja,
+.no-padding.ed-container > .ed-item,
+.caja.no-padding,
+.ed-item.no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Controlar el padding*/
+/* line 79, ../scss/componentes/_utilidades.scss */
+.padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 84, ../scss/componentes/_utilidades.scss */
+.padding-2 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* line 89, ../scss/componentes/_utilidades.scss */
+.padding-3 {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+/* line 95, ../scss/componentes/_utilidades.scss */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  position: relative;
+  top: .15em;
+  display: inline-block;
+}
+
+/* line 102, ../scss/componentes/_utilidades.scss */
+.espacio:before {
+  margin-right: .3em;
+}
+
+/* line 2, ../scss/componentes/_video.scss */
+.ed-video {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+/* line 8, ../scss/componentes/_video.scss */
+.ed-video > iframe,
+.ed-video > object,
+.ed-video > video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 8, ../scss/componentes/_ed-menu.scss */
+.ed-menu, .ed-menu ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+/* line 16, ../scss/componentes/_ed-menu.scss */
+.ed-menu li {
+  position: relative;
+}
+/* line 20, ../scss/componentes/_ed-menu.scss */
+.ed-menu ul {
+  position: absolute;
+  display: none;
+}
+/* line 27, ../scss/componentes/_ed-menu.scss */
+.ed-menu a {
+  display: block;
+  width: 100%;
+  line-height: 3em;
+  padding: 0 1em;
+}
+/* line 35, ../scss/componentes/_ed-menu.scss */
+.ed-menu.default, .ed-menu.nav-bar {
+  background: #eee;
+}
+/* line 37, ../scss/componentes/_ed-menu.scss */
+.ed-menu.default li, .ed-menu.nav-bar li {
+  flex: 1;
+}
+/* line 41, ../scss/componentes/_ed-menu.scss */
+.ed-menu.default li:hover, .ed-menu.nav-bar li:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+/* line 46, ../scss/componentes/_ed-menu.scss */
+.ed-menu.default ul, .ed-menu.nav-bar ul {
+  background: #e1e1e1;
+}
+/* line 49, ../scss/componentes/_ed-menu.scss */
+.ed-menu.default a, .ed-menu.nav-bar a {
+  color: #666;
+}
+/* line 54, ../scss/componentes/_ed-menu.scss */
+.ed-menu.nav-bar {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 61, ../scss/componentes/_ed-menu.scss */
+.ed-menu.nav-bar li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 63, ../scss/componentes/_ed-menu.scss */
+.ed-menu.nav-bar li:last-child {
+  border-right: none;
+}
+/* line 69, ../scss/componentes/_ed-menu.scss */
+.ed-menu.nav-bar ul {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 71, ../scss/componentes/_ed-menu.scss */
+.ed-menu.nav-bar ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 73, ../scss/componentes/_ed-menu.scss */
+.ed-menu.nav-bar ul li:last-child {
+  border-bottom: none;
+}
+/* line 81, ../scss/componentes/_ed-menu.scss */
+.ed-menu.button-bar li {
+  margin-bottom: .5em;
+  margin-right: .5em;
+}
+/* line 85, ../scss/componentes/_ed-menu.scss */
+.ed-menu.button-bar a {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  background: #eee;
+  line-height: 2.5em;
+  margin-right: .5em;
+  padding: 0 1.5em;
+  border-radius: 4px;
+  color: #666;
+}
+/* line 94, ../scss/componentes/_ed-menu.scss */
+.ed-menu.button-bar a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: tablet) {
+  /* line 137, ../scss/componentes/_ed-menu.scss */
+  .tablet-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  /* line 109, ../scss/componentes/_ed-menu.scss */
+  .tablet-horizontal.nav-bar > li {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: none;
+  }
+  /* line 115, ../scss/componentes/_ed-menu.scss */
+  .tablet-horizontal a {
+    text-align: center;
+  }
+  /* line 119, ../scss/componentes/_ed-menu.scss */
+  .tablet-horizontal ul {
+    position: absolute;
+    top: 100%;
+    min-width: 10em;
+  }
+  /* line 123, ../scss/componentes/_ed-menu.scss */
+  .tablet-horizontal ul ul {
+    top: 0;
+    left: 100%;
+  }
+  /* line 130, ../scss/componentes/_ed-menu.scss */
+  .tablet-horizontal li:hover > ul {
+    display: block;
+  }
+}
+
+@media screen and (min-width: web) {
+  /* line 142, ../scss/componentes/_ed-menu.scss */
+  .web-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  /* line 109, ../scss/componentes/_ed-menu.scss */
+  .web-horizontal.nav-bar > li {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: none;
+  }
+  /* line 115, ../scss/componentes/_ed-menu.scss */
+  .web-horizontal a {
+    text-align: center;
+  }
+  /* line 119, ../scss/componentes/_ed-menu.scss */
+  .web-horizontal ul {
+    position: absolute;
+    top: 100%;
+    min-width: 10em;
+  }
+  /* line 123, ../scss/componentes/_ed-menu.scss */
+  .web-horizontal ul ul {
+    top: 0;
+    left: 100%;
+  }
+  /* line 130, ../scss/componentes/_ed-menu.scss */
+  .web-horizontal li:hover > ul {
+    display: block;
+  }
+}
+
+@font-face {
+  font-family: "ed-grid";
+  src: url("~ed-grid/fonts/ed-grid.eot");
+  src: url("~ed-grid/fonts/ed-grid.eot?#iefix") format("embedded-opentype"), url("~ed-grid/fonts/ed-grid.woff") format("woff"), url("~ed-grid/fonts/ed-grid.ttf") format("truetype"), url("~ed-grid/fonts/ed-grid.svg#ed-grid") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 15, ../scss/componentes/_icon-fonts.scss */
+[data-icon]:before {
+  font-family: "ed-grid", sans-serif !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 28, ../scss/componentes/_icon-fonts.scss */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "ed-grid",sans-serif !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 41, ../scss/componentes/_icon-fonts.scss */
+.icon-youtube:before {
+  content: "a";
+}
+
+/* line 44, ../scss/componentes/_icon-fonts.scss */
+.icon-twitter:before {
+  content: "b";
+}
+
+/* line 47, ../scss/componentes/_icon-fonts.scss */
+.icon-facebook:before {
+  content: "c";
+}
+
+/* line 50, ../scss/componentes/_icon-fonts.scss */
+.icon-linkedin:before {
+  content: "d";
+}
+
+/* line 53, ../scss/componentes/_icon-fonts.scss */
+.icon-pinterest:before {
+  content: "e";
+}
+
+/* line 56, ../scss/componentes/_icon-fonts.scss */
+.icon-instagram:before {
+  content: "f";
+}
+
+/* line 59, ../scss/componentes/_icon-fonts.scss */
+.icon-rss:before {
+  content: "g";
+}
+
+/* line 62, ../scss/componentes/_icon-fonts.scss */
+.icon-github:before {
+  content: "h";
+}
+
+/* line 65, ../scss/componentes/_icon-fonts.scss */
+.icon-izquierda:before {
+  content: "i";
+}
+
+/* line 68, ../scss/componentes/_icon-fonts.scss */
+.icon-derecha:before {
+  content: "j";
+}
+
+/* line 71, ../scss/componentes/_icon-fonts.scss */
+.icon-arriba:before {
+  content: "k";
+}
+
+/* line 74, ../scss/componentes/_icon-fonts.scss */
+.icon-abajo:before {
+  content: "l";
+}
+
+/* line 77, ../scss/componentes/_icon-fonts.scss */
+.icon-triangulo-izquierda:before {
+  content: "m";
+}
+
+/* line 80, ../scss/componentes/_icon-fonts.scss */
+.icon-triangulo-derecha:before {
+  content: "n";
+}
+
+/* line 83, ../scss/componentes/_icon-fonts.scss */
+.icon-triangulo-arriba:before {
+  content: "p";
+}
+
+/* line 86, ../scss/componentes/_icon-fonts.scss */
+.icon-aceptar:before {
+  content: "q";
+}
+
+/* line 89, ../scss/componentes/_icon-fonts.scss */
+.icon-triangulo-abajo:before {
+  content: "o";
+}
+
+/* line 92, ../scss/componentes/_icon-fonts.scss */
+.icon-telefono:before {
+  content: "r";
+}
+
+/* line 95, ../scss/componentes/_icon-fonts.scss */
+.icon-android:before {
+  content: "s";
+}
+
+/* line 98, ../scss/componentes/_icon-fonts.scss */
+.icon-apple:before {
+  content: "t";
+}
+
+/* line 101, ../scss/componentes/_icon-fonts.scss */
+.icon-bitcoin:before {
+  content: "u";
+}
+
+/* line 104, ../scss/componentes/_icon-fonts.scss */
+.icon-fecha:before {
+  content: "v";
+}
+
+/* line 107, ../scss/componentes/_icon-fonts.scss */
+.icon-camara:before {
+  content: "w";
+}
+
+/* line 110, ../scss/componentes/_icon-fonts.scss */
+.icon-tarjeta:before {
+  content: "x";
+}
+
+/* line 113, ../scss/componentes/_icon-fonts.scss */
+.icon-pin:before {
+  content: "y";
+}
+
+/* line 116, ../scss/componentes/_icon-fonts.scss */
+.icon-cerrar:before {
+  content: "z";
+}
+
+/* line 119, ../scss/componentes/_icon-fonts.scss */
+.icon-whatsapp:before {
+  content: "A";
+}
+
+/* line 122, ../scss/componentes/_icon-fonts.scss */
+.icon-vimeo:before {
+  content: "B";
+}
+
+/* line 125, ../scss/componentes/_icon-fonts.scss */
+.icon-menu:before {
+  content: "C";
+}
+
+/* line 128, ../scss/componentes/_icon-fonts.scss */
+.icon-menu-secundario:before {
+  content: "D";
+}
+
+/* line 131, ../scss/componentes/_icon-fonts.scss */
+.icon-correo:before {
+  content: "E";
+}
+
+/* line 134, ../scss/componentes/_icon-fonts.scss */
+.icon-ed:before {
+  content: "F";
+}
+
+/* line 137, ../scss/componentes/_icon-fonts.scss */
+.icon-google-plus:before {
+  content: "G";
+}
+
+/* line 140, ../scss/componentes/_icon-fonts.scss */
+.icon-carrito:before {
+  content: "H";
+}
+
+/* line 143, ../scss/componentes/_icon-fonts.scss */
+.icon-usuario:before {
+  content: "I";
+}
+
+/* line 146, ../scss/componentes/_icon-fonts.scss */
+.icon-enlace:before {
+  content: "J";
+}
+
+/* line 149, ../scss/componentes/_icon-fonts.scss */
+.icon-portafolio:before {
+  content: "K";
+}
+
+/* line 152, ../scss/componentes/_icon-fonts.scss */
+.icon-mastercard:before {
+  content: "L";
+}
+
+/* line 155, ../scss/componentes/_icon-fonts.scss */
+.icon-paypal:before {
+  content: "M";
+}
+
+/* line 158, ../scss/componentes/_icon-fonts.scss */
+.icon-visa:before {
+  content: "N";
+}
+
+/* line 161, ../scss/componentes/_icon-fonts.scss */
+.icon-buscar:before {
+  content: "O";
+}
+
+@media screen and (min-width: 480px) {
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .xs-order-1 {
+    order: 1;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .xs-order-2 {
+    order: 2;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .xs-order-3 {
+    order: 3;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .xs-order-4 {
+    order: 4;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .xs-order-5 {
+    order: 5;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .xs-order-6 {
+    order: 6;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .xs-order-7 {
+    order: 7;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .xs-order-8 {
+    order: 8;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .xs-order-9 {
+    order: 9;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .xs-order-10 {
+    order: 10;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .sm-order-1 {
+    order: 1;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .sm-order-2 {
+    order: 2;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .sm-order-3 {
+    order: 3;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .sm-order-4 {
+    order: 4;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .sm-order-5 {
+    order: 5;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .sm-order-6 {
+    order: 6;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .sm-order-7 {
+    order: 7;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .sm-order-8 {
+    order: 8;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .sm-order-9 {
+    order: 9;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .sm-order-10 {
+    order: 10;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .md-order-1 {
+    order: 1;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .md-order-2 {
+    order: 2;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .md-order-3 {
+    order: 3;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .md-order-4 {
+    order: 4;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .md-order-5 {
+    order: 5;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .md-order-6 {
+    order: 6;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .md-order-7 {
+    order: 7;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .md-order-8 {
+    order: 8;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .md-order-9 {
+    order: 9;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .md-order-10 {
+    order: 10;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .lg-order-1 {
+    order: 1;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .lg-order-2 {
+    order: 2;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .lg-order-3 {
+    order: 3;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .lg-order-4 {
+    order: 4;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .lg-order-5 {
+    order: 5;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .lg-order-6 {
+    order: 6;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .lg-order-7 {
+    order: 7;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .lg-order-8 {
+    order: 8;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .lg-order-9 {
+    order: 9;
+  }
+
+  /* line 9, ../scss/componentes/_flexbox.scss */
+  .lg-order-10 {
+    order: 10;
+  }
+}
+/* line 17, ../scss/componentes/_flexbox.scss */
+.justify {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 480px) {
+  /* line 24, ../scss/componentes/_flexbox.scss */
+  .xs-justify {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 24, ../scss/componentes/_flexbox.scss */
+  .sm-justify {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 992px) {
+  /* line 24, ../scss/componentes/_flexbox.scss */
+  .md-justify {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 1400px) {
+  /* line 24, ../scss/componentes/_flexbox.scss */
+  .lg-justify {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* line 31, ../scss/componentes/_flexbox.scss */
+.distribute,
+.distributed {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 480px) {
+  /* line 39, ../scss/componentes/_flexbox.scss */
+  .xs-distribute,
+  .xs-distributed {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 39, ../scss/componentes/_flexbox.scss */
+  .sm-distribute,
+  .sm-distributed {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 992px) {
+  /* line 39, ../scss/componentes/_flexbox.scss */
+  .md-distribute,
+  .md-distributed {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 1400px) {
+  /* line 39, ../scss/componentes/_flexbox.scss */
+  .lg-distribute,
+  .lg-distributed {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* line 47, ../scss/componentes/_flexbox.scss */
+.main-center {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 480px) {
+  /* line 54, ../scss/componentes/_flexbox.scss */
+  .xs-main-center {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 54, ../scss/componentes/_flexbox.scss */
+  .sm-main-center {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 992px) {
+  /* line 54, ../scss/componentes/_flexbox.scss */
+  .md-main-center {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 1400px) {
+  /* line 54, ../scss/componentes/_flexbox.scss */
+  .lg-main-center {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* line 61, ../scss/componentes/_flexbox.scss */
+.main-start {
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 480px) {
+  /* line 68, ../scss/componentes/_flexbox.scss */
+  .xs-main-start {
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 68, ../scss/componentes/_flexbox.scss */
+  .sm-main-start {
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 992px) {
+  /* line 68, ../scss/componentes/_flexbox.scss */
+  .md-main-start {
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 1400px) {
+  /* line 68, ../scss/componentes/_flexbox.scss */
+  .lg-main-start {
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* line 75, ../scss/componentes/_flexbox.scss */
+.main-end {
+  justify-content: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 480px) {
+  /* line 82, ../scss/componentes/_flexbox.scss */
+  .xs-main-end {
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 82, ../scss/componentes/_flexbox.scss */
+  .sm-main-end {
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 992px) {
+  /* line 82, ../scss/componentes/_flexbox.scss */
+  .md-main-end {
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 1400px) {
+  /* line 82, ../scss/componentes/_flexbox.scss */
+  .lg-main-end {
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* line 91, ../scss/componentes/_flexbox.scss */
+.cross-start {
+  align-items: flex-start;
+  align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 480px) {
+  /* line 99, ../scss/componentes/_flexbox.scss */
+  .xs-cross-start {
+    align-items: flex-start;
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 99, ../scss/componentes/_flexbox.scss */
+  .sm-cross-start {
+    align-items: flex-start;
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 992px) {
+  /* line 99, ../scss/componentes/_flexbox.scss */
+  .md-cross-start {
+    align-items: flex-start;
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 1400px) {
+  /* line 99, ../scss/componentes/_flexbox.scss */
+  .lg-cross-start {
+    align-items: flex-start;
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* line 107, ../scss/componentes/_flexbox.scss */
+.cross-center {
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 480px) {
+  /* line 115, ../scss/componentes/_flexbox.scss */
+  .xs-cross-center {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 115, ../scss/componentes/_flexbox.scss */
+  .sm-cross-center {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 992px) {
+  /* line 115, ../scss/componentes/_flexbox.scss */
+  .md-cross-center {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 1400px) {
+  /* line 115, ../scss/componentes/_flexbox.scss */
+  .lg-cross-center {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* line 123, ../scss/componentes/_flexbox.scss */
+.cross-end {
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+@media all and (min-width: 480px) {
+  /* line 129, ../scss/componentes/_flexbox.scss */
+  .xs-cross-end {
+    align-items: flex-end;
+    align-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 129, ../scss/componentes/_flexbox.scss */
+  .sm-cross-end {
+    align-items: flex-end;
+    align-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 992px) {
+  /* line 129, ../scss/componentes/_flexbox.scss */
+  .md-cross-end {
+    align-items: flex-end;
+    align-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 1400px) {
+  /* line 129, ../scss/componentes/_flexbox.scss */
+  .lg-cross-end {
+    align-items: flex-end;
+    align-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* line 139, ../scss/componentes/_flexbox.scss */
+.reverse {
+  flex-direction: row-reverse;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 480px) {
+  /* line 146, ../scss/componentes/_flexbox.scss */
+  .xs-reverse {
+    flex-direction: row-reverse;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 146, ../scss/componentes/_flexbox.scss */
+  .sm-reverse {
+    flex-direction: row-reverse;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 992px) {
+  /* line 146, ../scss/componentes/_flexbox.scss */
+  .md-reverse {
+    flex-direction: row-reverse;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 1400px) {
+  /* line 146, ../scss/componentes/_flexbox.scss */
+  .lg-reverse {
+    flex-direction: row-reverse;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* line 153, ../scss/componentes/_flexbox.scss */
+.column {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 480px) {
+  /* line 161, ../scss/componentes/_flexbox.scss */
+  .xs-column {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 161, ../scss/componentes/_flexbox.scss */
+  .sm-column {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 992px) {
+  /* line 161, ../scss/componentes/_flexbox.scss */
+  .md-column {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 1400px) {
+  /* line 161, ../scss/componentes/_flexbox.scss */
+  .lg-column {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* line 168, ../scss/componentes/_flexbox.scss */
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
+@media all and (min-width: 480px) {
+  /* line 173, ../scss/componentes/_flexbox.scss */
+  .xs-column {
+    flex-direction: column-reverse;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 173, ../scss/componentes/_flexbox.scss */
+  .sm-column {
+    flex-direction: column-reverse;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 992px) {
+  /* line 173, ../scss/componentes/_flexbox.scss */
+  .md-column {
+    flex-direction: column-reverse;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 1400px) {
+  /* line 173, ../scss/componentes/_flexbox.scss */
+  .lg-column {
+    flex-direction: column-reverse;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* line 182, ../scss/componentes/_flexbox.scss */
+.abcenter {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* line 188, ../scss/componentes/_flexbox.scss */
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+@media all and (min-width: 480px) {
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-5,
+  .ed-item.xs-offset-5 {
+    margin-left: 5%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-10,
+  .ed-item.xs-offset-10 {
+    margin-left: 10%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-15,
+  .ed-item.xs-offset-15 {
+    margin-left: 15%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-20,
+  .ed-item.xs-offset-20 {
+    margin-left: 20%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-25,
+  .ed-item.xs-offset-25 {
+    margin-left: 25%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-30,
+  .ed-item.xs-offset-30 {
+    margin-left: 30%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-35,
+  .ed-item.xs-offset-35 {
+    margin-left: 35%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-40,
+  .ed-item.xs-offset-40 {
+    margin-left: 40%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-45,
+  .ed-item.xs-offset-45 {
+    margin-left: 45%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-50,
+  .ed-item.xs-offset-50 {
+    margin-left: 50%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-55,
+  .ed-item.xs-offset-55 {
+    margin-left: 55%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-60,
+  .ed-item.xs-offset-60 {
+    margin-left: 60%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-65,
+  .ed-item.xs-offset-65 {
+    margin-left: 65%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-70,
+  .ed-item.xs-offset-70 {
+    margin-left: 70%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-75,
+  .ed-item.xs-offset-75 {
+    margin-left: 75%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-80,
+  .ed-item.xs-offset-80 {
+    margin-left: 80%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-85,
+  .ed-item.xs-offset-85 {
+    margin-left: 85%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-90,
+  .ed-item.xs-offset-90 {
+    margin-left: 90%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-95,
+  .ed-item.xs-offset-95 {
+    margin-left: 95%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-100,
+  .ed-item.xs-offset-100 {
+    margin-left: 100%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-1-3,
+  .ed-item.xs-offset-1-3 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-2-3,
+  .ed-item.xs-offset-2-3 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-3-3,
+  .ed-item.xs-offset-3-3 {
+    margin-left: 100%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-1-6,
+  .ed-item.xs-offset-1-6 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-2-6,
+  .ed-item.xs-offset-2-6 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-3-6,
+  .ed-item.xs-offset-3-6 {
+    margin-left: 50%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-4-6,
+  .ed-item.xs-offset-4-6 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-5-6,
+  .ed-item.xs-offset-5-6 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-6-6,
+  .ed-item.xs-offset-6-6 {
+    margin-left: 100%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-1-8,
+  .ed-item.xs-offset-1-8 {
+    margin-left: 12.5%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-2-8,
+  .ed-item.xs-offset-2-8 {
+    margin-left: 25%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-3-8,
+  .ed-item.xs-offset-3-8 {
+    margin-left: 37.5%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-4-8,
+  .ed-item.xs-offset-4-8 {
+    margin-left: 50%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-5-8,
+  .ed-item.xs-offset-5-8 {
+    margin-left: 62.5%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-6-8,
+  .ed-item.xs-offset-6-8 {
+    margin-left: 75%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-7-8,
+  .ed-item.xs-offset-7-8 {
+    margin-left: 87.5%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.xs-offset-8-8,
+  .ed-item.xs-offset-8-8 {
+    margin-left: 100%;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-5,
+  .ed-item.sm-offset-5 {
+    margin-left: 5%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-10,
+  .ed-item.sm-offset-10 {
+    margin-left: 10%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-15,
+  .ed-item.sm-offset-15 {
+    margin-left: 15%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-20,
+  .ed-item.sm-offset-20 {
+    margin-left: 20%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-25,
+  .ed-item.sm-offset-25 {
+    margin-left: 25%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-30,
+  .ed-item.sm-offset-30 {
+    margin-left: 30%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-35,
+  .ed-item.sm-offset-35 {
+    margin-left: 35%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-40,
+  .ed-item.sm-offset-40 {
+    margin-left: 40%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-45,
+  .ed-item.sm-offset-45 {
+    margin-left: 45%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-50,
+  .ed-item.sm-offset-50 {
+    margin-left: 50%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-55,
+  .ed-item.sm-offset-55 {
+    margin-left: 55%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-60,
+  .ed-item.sm-offset-60 {
+    margin-left: 60%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-65,
+  .ed-item.sm-offset-65 {
+    margin-left: 65%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-70,
+  .ed-item.sm-offset-70 {
+    margin-left: 70%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-75,
+  .ed-item.sm-offset-75 {
+    margin-left: 75%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-80,
+  .ed-item.sm-offset-80 {
+    margin-left: 80%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-85,
+  .ed-item.sm-offset-85 {
+    margin-left: 85%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-90,
+  .ed-item.sm-offset-90 {
+    margin-left: 90%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-95,
+  .ed-item.sm-offset-95 {
+    margin-left: 95%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-100,
+  .ed-item.sm-offset-100 {
+    margin-left: 100%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-1-3,
+  .ed-item.sm-offset-1-3 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-2-3,
+  .ed-item.sm-offset-2-3 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-3-3,
+  .ed-item.sm-offset-3-3 {
+    margin-left: 100%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-1-6,
+  .ed-item.sm-offset-1-6 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-2-6,
+  .ed-item.sm-offset-2-6 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-3-6,
+  .ed-item.sm-offset-3-6 {
+    margin-left: 50%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-4-6,
+  .ed-item.sm-offset-4-6 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-5-6,
+  .ed-item.sm-offset-5-6 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-6-6,
+  .ed-item.sm-offset-6-6 {
+    margin-left: 100%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-1-8,
+  .ed-item.sm-offset-1-8 {
+    margin-left: 12.5%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-2-8,
+  .ed-item.sm-offset-2-8 {
+    margin-left: 25%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-3-8,
+  .ed-item.sm-offset-3-8 {
+    margin-left: 37.5%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-4-8,
+  .ed-item.sm-offset-4-8 {
+    margin-left: 50%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-5-8,
+  .ed-item.sm-offset-5-8 {
+    margin-left: 62.5%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-6-8,
+  .ed-item.sm-offset-6-8 {
+    margin-left: 75%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-7-8,
+  .ed-item.sm-offset-7-8 {
+    margin-left: 87.5%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.sm-offset-8-8,
+  .ed-item.sm-offset-8-8 {
+    margin-left: 100%;
+  }
+}
+@media all and (min-width: 992px) {
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-5,
+  .ed-item.md-offset-5 {
+    margin-left: 5%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-10,
+  .ed-item.md-offset-10 {
+    margin-left: 10%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-15,
+  .ed-item.md-offset-15 {
+    margin-left: 15%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-20,
+  .ed-item.md-offset-20 {
+    margin-left: 20%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-25,
+  .ed-item.md-offset-25 {
+    margin-left: 25%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-30,
+  .ed-item.md-offset-30 {
+    margin-left: 30%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-35,
+  .ed-item.md-offset-35 {
+    margin-left: 35%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-40,
+  .ed-item.md-offset-40 {
+    margin-left: 40%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-45,
+  .ed-item.md-offset-45 {
+    margin-left: 45%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-50,
+  .ed-item.md-offset-50 {
+    margin-left: 50%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-55,
+  .ed-item.md-offset-55 {
+    margin-left: 55%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-60,
+  .ed-item.md-offset-60 {
+    margin-left: 60%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-65,
+  .ed-item.md-offset-65 {
+    margin-left: 65%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-70,
+  .ed-item.md-offset-70 {
+    margin-left: 70%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-75,
+  .ed-item.md-offset-75 {
+    margin-left: 75%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-80,
+  .ed-item.md-offset-80 {
+    margin-left: 80%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-85,
+  .ed-item.md-offset-85 {
+    margin-left: 85%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-90,
+  .ed-item.md-offset-90 {
+    margin-left: 90%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-95,
+  .ed-item.md-offset-95 {
+    margin-left: 95%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.md-offset-100,
+  .ed-item.md-offset-100 {
+    margin-left: 100%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-1-3,
+  .ed-item.md-offset-1-3 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-2-3,
+  .ed-item.md-offset-2-3 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-3-3,
+  .ed-item.md-offset-3-3 {
+    margin-left: 100%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-1-6,
+  .ed-item.md-offset-1-6 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-2-6,
+  .ed-item.md-offset-2-6 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-3-6,
+  .ed-item.md-offset-3-6 {
+    margin-left: 50%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-4-6,
+  .ed-item.md-offset-4-6 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-5-6,
+  .ed-item.md-offset-5-6 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-6-6,
+  .ed-item.md-offset-6-6 {
+    margin-left: 100%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-1-8,
+  .ed-item.md-offset-1-8 {
+    margin-left: 12.5%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-2-8,
+  .ed-item.md-offset-2-8 {
+    margin-left: 25%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-3-8,
+  .ed-item.md-offset-3-8 {
+    margin-left: 37.5%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-4-8,
+  .ed-item.md-offset-4-8 {
+    margin-left: 50%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-5-8,
+  .ed-item.md-offset-5-8 {
+    margin-left: 62.5%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-6-8,
+  .ed-item.md-offset-6-8 {
+    margin-left: 75%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-7-8,
+  .ed-item.md-offset-7-8 {
+    margin-left: 87.5%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.md-offset-8-8,
+  .ed-item.md-offset-8-8 {
+    margin-left: 100%;
+  }
+}
+@media all and (min-width: 1400px) {
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-5,
+  .ed-item.lg-offset-5 {
+    margin-left: 5%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-10,
+  .ed-item.lg-offset-10 {
+    margin-left: 10%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-15,
+  .ed-item.lg-offset-15 {
+    margin-left: 15%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-20,
+  .ed-item.lg-offset-20 {
+    margin-left: 20%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-25,
+  .ed-item.lg-offset-25 {
+    margin-left: 25%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-30,
+  .ed-item.lg-offset-30 {
+    margin-left: 30%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-35,
+  .ed-item.lg-offset-35 {
+    margin-left: 35%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-40,
+  .ed-item.lg-offset-40 {
+    margin-left: 40%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-45,
+  .ed-item.lg-offset-45 {
+    margin-left: 45%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-50,
+  .ed-item.lg-offset-50 {
+    margin-left: 50%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-55,
+  .ed-item.lg-offset-55 {
+    margin-left: 55%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-60,
+  .ed-item.lg-offset-60 {
+    margin-left: 60%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-65,
+  .ed-item.lg-offset-65 {
+    margin-left: 65%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-70,
+  .ed-item.lg-offset-70 {
+    margin-left: 70%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-75,
+  .ed-item.lg-offset-75 {
+    margin-left: 75%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-80,
+  .ed-item.lg-offset-80 {
+    margin-left: 80%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-85,
+  .ed-item.lg-offset-85 {
+    margin-left: 85%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-90,
+  .ed-item.lg-offset-90 {
+    margin-left: 90%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-95,
+  .ed-item.lg-offset-95 {
+    margin-left: 95%;
+  }
+
+  /* line 7, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-100,
+  .ed-item.lg-offset-100 {
+    margin-left: 100%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-1-3,
+  .ed-item.lg-offset-1-3 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-2-3,
+  .ed-item.lg-offset-2-3 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-3-3,
+  .ed-item.lg-offset-3-3 {
+    margin-left: 100%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-1-6,
+  .ed-item.lg-offset-1-6 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-2-6,
+  .ed-item.lg-offset-2-6 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-3-6,
+  .ed-item.lg-offset-3-6 {
+    margin-left: 50%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-4-6,
+  .ed-item.lg-offset-4-6 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-5-6,
+  .ed-item.lg-offset-5-6 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-6-6,
+  .ed-item.lg-offset-6-6 {
+    margin-left: 100%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-1-8,
+  .ed-item.lg-offset-1-8 {
+    margin-left: 12.5%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-2-8,
+  .ed-item.lg-offset-2-8 {
+    margin-left: 25%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-3-8,
+  .ed-item.lg-offset-3-8 {
+    margin-left: 37.5%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-4-8,
+  .ed-item.lg-offset-4-8 {
+    margin-left: 50%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-5-8,
+  .ed-item.lg-offset-5-8 {
+    margin-left: 62.5%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-6-8,
+  .ed-item.lg-offset-6-8 {
+    margin-left: 75%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-7-8,
+  .ed-item.lg-offset-7-8 {
+    margin-left: 87.5%;
+  }
+
+  /* line 15, ../scss/componentes/_offset.scss */
+  .caja.lg-offset-8-8,
+  .ed-item.lg-offset-8-8 {
+    margin-left: 100%;
+  }
+}
+/* line 27, ../scss/componentes/_modulos.scss */
+.boton, .button, button {
+  display: inline-block;
+  line-height: 2.5em;
+  background: #ddd;
+  color: #333;
+  padding: 0 1.5em;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+/* line 11, ../scss/componentes/_modulos.scss */
+.boton:hover, .button:hover, button:hover {
+  background: #d0d0d0;
+}
+/* line 14, ../scss/componentes/_modulos.scss */
+.boton:active, .button:active, button:active {
+  transform: scale(0.97);
+}
+/* line 29, ../scss/componentes/_modulos.scss */
+.boton.round, .button.round, button.round {
+  display: inline-block;
+  line-height: 2.5em;
+  background: #ddd;
+  color: #333;
+  padding: 0 1.5em;
+  cursor: pointer;
+  margin-bottom: 1em;
+  border-radius: 1.25em;
+}
+/* line 11, ../scss/componentes/_modulos.scss */
+.boton.round:hover, .button.round:hover, button.round:hover {
+  background: #d0d0d0;
+}
+/* line 14, ../scss/componentes/_modulos.scss */
+.boton.round:active, .button.round:active, button.round:active {
+  transform: scale(0.97);
+}
+/* line 32, ../scss/componentes/_modulos.scss */
+.boton.radius, .button.radius, button.radius {
+  display: inline-block;
+  line-height: 2.5em;
+  background: #ddd;
+  color: #333;
+  padding: 0 1.5em;
+  cursor: pointer;
+  margin-bottom: 1em;
+  border-radius: 1.25em;
+}
+/* line 11, ../scss/componentes/_modulos.scss */
+.boton.radius:hover, .button.radius:hover, button.radius:hover {
+  background: #d0d0d0;
+}
+/* line 14, ../scss/componentes/_modulos.scss */
+.boton.radius:active, .button.radius:active, button.radius:active {
+  transform: scale(0.97);
+}
+
+/* line 3, ../scss/main.scss */
 body {
   background: #F5F5F5;
   margin: 0px 0px;
 }
 
-/* line 7, ../scss/main.scss */
+/* line 8, ../scss/main.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  display: block;
 }
 
-/* line 11, ../scss/main.scss */
+/* line 12, ../scss/main.scss */
 a {
+  color: #FFFFFF;
   text-decoration: none;
 }
 
-/* line 14, ../scss/main.scss */
-header {
+/* line 17, ../scss/main.scss */
+section {
+  padding: 2%;
+}
+
+/* line 21, ../scss/main.scss */
+.active {
+  background: red;
+}
+
+/* line 25, ../scss/main.scss */
+.header {
+  margin-bottom: 2em;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/background1.jpg");
   background-size: cover;
-  position: relative;
   height: 100vh;
-  	/*&:after {
-  		content:'\A';
-  		position:absolute;
-      	color: #fff;
-  		width:100%; height:100%;
-  		top:0; left:0;
-  		background:rgba(0,0,0,0.6);
-  		opacity:1;
-  	}*/
 }
-/* line 33, ../scss/main.scss */
-header nav {
-  position: fixed;
-  width: 100%;
-  background: transparent;
-  /*border-bottom: 1px solid $white-smoke;*/
-  /*padding-top: 30px;
-  padding-bottom: 30px;*/
+/* line 35, ../scss/main.scss */
+.header nav {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+/* line 39, ../scss/main.scss */
+.header nav > .caja {
   display: flex;
   align-items: center;
 }
-/* line 42, ../scss/main.scss */
-header nav .brand-logo {
-  float: left;
-  margin: 20px;
+/* line 43, ../scss/main.scss */
+.header .header-content {
+  height: 100vh;
+  color: #FFFFFF;
 }
-/* line 45, ../scss/main.scss */
-header nav .brand-logo img {
+/* line 46, ../scss/main.scss */
+.header .header-content .title {
+  font-size: 8em;
+  text-transform: uppercase;
+}
+/* line 50, ../scss/main.scss */
+.header .header-content .subtitle {
+  margin: 0;
+  font-size: 3em;
+}
+/* line 55, ../scss/main.scss */
+.header .nav {
+  position: fixed;
+}
+/* line 58, ../scss/main.scss */
+.header .logo {
   height: 64px;
   width: 64px;
 }
-/* line 50, ../scss/main.scss */
-header nav ul {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: 50px;
-}
-/* line 54, ../scss/main.scss */
-header nav ul li {
-  display: inline-block;
-  padding: 5px;
-}
-/* line 58, ../scss/main.scss */
-header nav ul a {
-  color: #FFFFFF;
-}
-/* line 61, ../scss/main.scss */
-header nav ul a:hover {
-  text-decoration: underline;
+
+/* line 65, ../scss/main.scss */
+.about h2 {
   color: #008080;
-}
-/* line 67, ../scss/main.scss */
-header .header-content {
-  position: absolute;
+  border-bottom: 1px solid #B0B0B0;
   text-align: center;
-  color: #FFFFFF;
-  font-size: 50px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-transform: uppercase;
 }
-/* line 76, ../scss/main.scss */
-header .header-content .subtitle {
-  font-size: 25px;
+/* line 71, ../scss/main.scss */
+.about p {
   text-align: justify;
 }
 
+/* line 77, ../scss/main.scss */
+.services h2 {
+  color: #008080;
+  border-bottom: 1px solid #B0B0B0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 84, ../scss/main.scss */
+.item {
+  padding: .5em;
+  margin: 1em;
+  text-align: center;
+  border: 1px solid #B0B0B0;
+}
+/* line 89, ../scss/main.scss */
+.item img {
+  height: 200px;
+  width: 200px;
+}
+/* line 93, ../scss/main.scss */
+.item .item-title {
+  text-transform: capitalize;
+  border-bottom: 1px solid #B0B0B0;
+}
+
+/* line 101, ../scss/main.scss */
+.menu {
+  margin: 0;
+  padding: 0;
+}
+/* line 104, ../scss/main.scss */
+.menu li {
+  display: inline-block;
+}
+/* line 107, ../scss/main.scss */
+.menu a {
+  color: #FFFFFF;
+  line-height: 3;
+  padding: 0 .5em;
+  text-transform: capitalize;
+}
+/* line 113, ../scss/main.scss */
+.menu a:hover {
+  color: #008080;
+  text-decoration: underline;
+}
+/* line 117, ../scss/main.scss */
+.menu .fa-home {
+  font-size: 1.5em;
+}
+
+/* line 122, ../scss/main.scss */
+.footer {
+  background: #277096;
+  color: #FFFFFF;
+}
+/* line 125, ../scss/main.scss */
+.footer .fa-facebook-square {
+  color: #FFFFFF;
+}
+/* line 128, ../scss/main.scss */
+.footer .fa-google-plus-square {
+  color: #FFFFFF;
+}
+/* line 131, ../scss/main.scss */
+.footer .fa-twitter-square {
+  color: #FFFFFF;
+}
+/* line 134, ../scss/main.scss */
+.footer .fa-github-square {
+  color: #FFFFFF;
+}
+@media screen and (max-width: 991px) {
+  /* line 138, ../scss/main.scss */
+  .footer i {
+    float: left;
+    font-size: 2.5em;
+    padding: 1%;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 145, ../scss/main.scss */
+  .footer i {
+    float: right;
+    font-size: 2.5em;
+    padding: 1%;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 151, ../scss/main.scss */
+  .footer .social-networks {
+    float: right;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 156, ../scss/main.scss */
+  .footer .info {
+    float: left;
+  }
+}
+
+/*h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	display: block;
+}
+a {
+	text-decoration: none;
+}*/
+/*header {
+	background:
+	linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+	url('../img/background1.jpg');
+	background-size:cover;
+	position:relative;
+	height:100vh;
+	& nav {
+		position: fixed;
+		width: 100%;
+		background: transparent;
+		display: flex;
+		align-items: center;
+		& .brand-logo {
+			float: left;
+			margin: 20px;
+			& img {
+				height: 64px;
+				width: 64px;
+			}
+		}
+		& ul {
+			display: inline-block;
+			margin-left: auto;
+			margin-right: 50px;
+			& li {
+				display: inline-block;
+				padding: 5px;
+			}
+			& a {
+				color: $white;
+			}
+			& a:hover {
+				text-decoration: underline;
+				color: $teal;
+			}
+		}
+	}
+	& .header-content {
+		position: absolute;
+		text-align: center;
+		color: $white;
+		font-size: 50px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-transform: uppercase;
+		& .subtitle {
+			font-size: 25px;
+			text-align: justify;
+		}
+	}
+}*/
 /*article {
 	padding:30px 50px;
 	text-align:center;
@@ -118,45 +3980,32 @@ header .header-content .subtitle {
 		}
 	}
 }*/
-/* line 113, ../scss/main.scss */
-.section-title {
-  font-size: 30px;
-  text-transform: uppercase;
+/*.section-title {
+	font-size: 30px;
+	text-transform: uppercase;
 }
-
-/* line 117, ../scss/main.scss */
 .section-content {
-  text-align: justify;
-  margin-top: 20px;
+	text-align: justify;
+	margin-top: 20px;
 }
-
-/* line 121, ../scss/main.scss */
 .section-footer {
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-/* line 125, ../scss/main.scss */
-.section-footer a {
-  color: #000000;
-  margin-right: 25px;
-}
-/* line 129, ../scss/main.scss */
-.section-footer a:hover {
-  color: #008080;
-  text-decoration: underline;
-}
-
-/* line 134, ../scss/main.scss */
-footer {
-  /*position: fixed;
-  width: 100%;
-  bottom: 0px;*/
-  background: #008080;
-  color: #FFFFFF;
-  padding: 30px 0px;
-}
-
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	& a {
+		color: $black;
+		margin-right: 25px;
+	}
+	& a:hover {
+		color: $teal;
+		text-decoration: underline;
+	}
+}*/
+/*footer {
+	background: $teal;
+	color: $white;
+	padding:30px 0px;
+}*/
 /*.img-container {
 	width: 50%;
 	position: relative;
@@ -186,41 +4035,35 @@ footer {
 		}
 	}
 }*/
-/* line 172, ../scss/main.scss */
-.img-container {
-  border: 2px solid gray;
-  max-width: 400px;
-  max-height: 500px;
-  display: inline-block;
-  margin: 5px;
-}
-/* line 178, ../scss/main.scss */
-.img-container .img-header {
-  max-height: 213px;
-  overflow: hidden;
-}
-/* line 182, ../scss/main.scss */
-.img-container .img-body {
-  padding: 0 26px 50px 26px;
-  background-color: #FFFFFF;
-}
-/* line 185, ../scss/main.scss */
-.img-container .img-body .img-body-title {
-  left: 0;
-  padding: 26px;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-/* line 191, ../scss/main.scss */
-.img-container .img-body .img-body-description {
-  padding: 5px;
-  text-align: justify;
-  border-bottom: 1px solid #757B82;
-}
-/* line 196, ../scss/main.scss */
-.img-container .img-body .img-body-footer {
-  position: relative;
-  margin-top: 14px;
-  font-size: 14px;
-  float: right;
-}
+/*.img-container {
+	border: 2px solid gray;
+	max-width: 400px;
+	max-height: 500px;
+	display: inline-block;
+	margin: 5px;
+	& .img-header {
+		max-height: 213px;
+		overflow: hidden;
+	}
+	& .img-body {
+		padding: 0 26px 50px 26px;
+		background-color: $white;
+		& .img-body-title {
+			left: 0;
+			padding: 26px;
+			text-transform: uppercase;
+			font-size: 20px;
+		}
+		& .img-body-description {
+			padding: 5px;
+			text-align: justify;
+			border-bottom: 1px solid #757B82;
+		}
+		& .img-body-footer {
+			position: relative;
+			margin-top: 14px;
+			font-size: 14px;
+			float: right;
+		}
+	}
+}*/
