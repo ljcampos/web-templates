@@ -47,14 +47,37 @@ module.exports= function(grunt) {
 				}]
 			}
 		},
+		compass: {
+			dev: {
+				options: {
+					sassDir: 'scss',
+					cssDir: 'css'
+				}
+				/*files:[{
+					expand: true,
+					cwd: 'scss',
+					src: '*.scss',
+					dest: 'css',
+					ext: '.css'
+				}]*/
+			}
+		},
 		watch: {
-			css: {
+			/*less: {
 				options: {
 					spawn:false,
 					event:['added', 'deleted', 'changed']
 				},
-				files: ['less/*.less'],
-				tasks: ['less:dev']
+				files: ['less/*.less', 'scss/ed-grid.scss'],
+				tasks: ['less:dev', 'compass:dev']
+			}*/
+			styles: {
+				options: {
+					spawn:false,
+					event:['added', 'deleted', 'changed']
+				},
+				files: ['scss/*.scss'],
+				tasks: ['compass:dev']
 			}
 		}
 	});
@@ -62,6 +85,7 @@ module.exports= function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-contrib-compass');
 	// Run default task(s).
-	grunt.registerTask('default', ['less:dev']);
+	grunt.registerTask('default', ['compass:dev']);
 };
