@@ -62,7 +62,21 @@ module.exports= function(grunt) {
 				}]*/
 			}
 		},
+		express: {
+			all: {
+				options: {
+					port: 9000,
+					hostname: 'localhost',
+					bases: ['.'],
+					livereload: true
+				}
+			}
+		},
 		watch: {
+			options: {
+				livereload: true,
+				spawn: false
+			},
 			/*less: {
 				options: {
 					spawn:false,
@@ -73,7 +87,6 @@ module.exports= function(grunt) {
 			}*/
 			styles: {
 				options: {
-					spawn:false,
 					event:['added', 'deleted', 'changed']
 				},
 				files: ['scss/*.scss'],
@@ -86,6 +99,14 @@ module.exports= function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-compass');
+	grunt.loadNpmTasks('grunt-express');
 	// Run default task(s).
 	grunt.registerTask('default', ['compass:dev']);
+	grunt.registerTask('server', ['express', 'watch']);
+
+	grunt.event.on('watch', function(action, filepath) {
+		if(grunt.file.isMatch(grunt.config('watch.styles.files'), filepath)) {
+			grunt.config('compass.dev.options.specify', [filepath]);
+		}
+	});
 };
